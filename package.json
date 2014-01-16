@@ -1,6 +1,6 @@
 {
   "name": "jshint-globals",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Use predefined grunt-contrib-jshint globals",
   "main": "index.js",
   "scripts": {
