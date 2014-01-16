@@ -7,7 +7,10 @@ If you have many Javascript projects and need to define jshint globals and use t
 
 ## Solution
 With `jshint-globals` you can easily use predefined or reuse you old globals.
-
+Install `jshint-globals`:
+```
+npm install jshint-globals --save-dev
+```
 Just require `jshint-globals`:
 ```javascript
 var jshintGlobals = require('jshint-globals');
@@ -71,5 +74,45 @@ jshint : {
   }
 }
 ```
-### Download pre-defined globals
+### Use pre-defined globals
+
+```javascript
+var jshintGlobals = require('jshint-globals');
+var browser = jshintGlobals.browser;
+
+...
+
+jshint : {
+  options : {
+    globals : jshintGlobals({
+      variable1 : true,
+      variable2 : true,
+      browser : browser
+    })
+  }
+}
+```
+the above equals:
+```javascript
+jshint : {
+  options : {
+    globals : {
+      variable1 : true,
+      variable2 : true,
+      open : true,
+      document : true,
+      navigator : true,
+      ...
+    }
+  }
+}
+```
+
+### Available globals
+```javascript
+var browser = require('jshint-globals').browser;
+var _requirejs = require('jshint-globals').requirejs;
+var mocha = require('jshint-globals').mocha
+```
+[Please check the source for all globals defined in each category](https://github.com/tinganho/jshint-globals/blob/master/index.js)
 
