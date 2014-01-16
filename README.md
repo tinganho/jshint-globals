@@ -40,5 +40,36 @@ jshint : {
   }
 }
 ```
+Use array instead of object:
+```javascript
+jshint : {
+  options : {
+    globals : jshintGlobals([
+      'variable1',
+      'variable2',
+      {
+        nestedObjectVariable1 : true,
+        nestedObjectVariable2 : true
+      },
+      ['nestedArrayVariable1', 'nestedArrayVariable1']
+    })
+  }
+}
+```
+the above equals:
+```javascript
+jshint : {
+  options : {
+    globals : {
+      variable1 : true,
+      variable2 : true,
+      nestedObjectVariable1 : true,
+      nestedObjectVariable2 : true,
+      nestedArrayVariable1 : true,
+      nestedArrayVariable2 : true
+    }
+  }
+}
+```
 ### Download pre-defined globals
 
