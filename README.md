@@ -74,7 +74,8 @@ jshint : {
 ### Use pre-defined globals
 
 ```javascript
-var browser = require('jshint-globals').browser
+var jshintGlobals = require('jshint-globals');
+var browser = jshintGlobals.browser;
 
 ...
 
