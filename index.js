@@ -82,3 +82,49 @@ module.exports = function(opts) {
 
   return globals;
 };
+
+/**
+ * Export mocha globals
+ */
+
+module.exports.mocha = [
+  'describe',
+  'it',
+  'before',
+  'after'
+];
+
+/**
+ * Export browser globals
+ */
+
+module.exports.browser = [
+  'open',
+  'document',
+  'navigator',
+  'confirm',
+  'performance',
+  'alert',
+  'window',
+  'Image',
+  'FileReader',
+  'localStorage',
+  'sessionStorage',
+  'cancelAnimationFrame',
+  'requestAnimationFrame',
+  'FormData',
+  'atob',
+  'Blob',
+  'Uint8Array',
+];
+
+
+/**
+ * Export browser globals
+ */
+
+module.exports.requirejs = [
+  'require',
+  'requirejs',
+  'define'
+];
