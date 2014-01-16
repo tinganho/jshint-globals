@@ -32,7 +32,7 @@ describe('jshintGlobals', function() {
     });
   });
 
-  it('should be able to define nested globals', function() {
+  it('should be able to define nested globals and unnested globals', function() {
     var globals = { 
       unnested : true,
       nested : { 
