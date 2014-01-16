@@ -3,7 +3,7 @@ jshint-globals
 Use predefined jshint globals. 
 
 ## Problem
-If you have many Javascript projects and need to define jshint globals and use them in a grunt task e.g. grunt-contrib-jshint. There should be a much easier way to reuse these globals between projects. And there should be option to download already predefined globals.
+If you have many Javascript projects and need to define jshint globals and use them in a grunt task e.g. [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint). There should be a much easier way to reuse these globals between projects. And there should be an option to download already pre-defined globals.
 
 ## Solution
 With `jshint-globals` you can easily use predefined or reuse you old globals.
@@ -40,4 +40,5 @@ jshint : {
   }
 }
 ```
+### Download pre-defined globals
 
