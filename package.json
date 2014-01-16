@@ -4,7 +4,7 @@
   "description": "Use predefined grunt-contrib-jshint globals",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "bin/test"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/tinganho/jshint-globals/issues"
   },
-  "homepage": "https://github.com/tinganho/jshint-globals"
+  "homepage": "https://github.com/tinganho/jshint-globals",
+  "devDependencies": {
+    "chai": "~1.8.1",
+    "mocha": "~1.17.0"
+  }
 }
