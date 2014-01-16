@@ -118,9 +118,8 @@ module.exports.browser = [
   'Uint8Array',
 ];
 
-
 /**
- * Export browser globals
+ * Export requirejs globals
  */
 
 module.exports.requirejs = [
