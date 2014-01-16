@@ -71,5 +71,43 @@ jshint : {
   }
 }
 ```
-### Download pre-defined globals
+### Use pre-defined globals
+
+```javascript
+var browser = require('jshint-globals').browser
+
+...
+
+jshint : {
+  options : {
+    globals : jshintGlobals({
+      variable1 : true,
+      variable2 : true,
+      browser : browser
+    })
+  }
+}
+```
+the above equals:
+```javascript
+jshint : {
+  options : {
+    globals : {
+      variable1 : true,
+      variable2 : true,
+      open : true,
+      document : true,
+      navigator : true,
+      ...
+    }
+  }
+}
+```
+
+### Available globals
+```javascript
+var browser = require('jshint-globals').browser;
+var _requirejs = require('jshint-globals').requirejs;
+var mocha = require('jshint-globals').mocha
+```
 
