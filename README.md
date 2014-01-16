@@ -7,7 +7,10 @@ If you have many Javascript projects and need to define jshint globals and use t
 
 ## Solution
 With `jshint-globals` you can easily use predefined or reuse you old globals.
-
+Install `jshint-globals`:
+```
+npm install jshint-globals --save-dev
+```
 Just require `jshint-globals`:
 ```javascript
 var jshintGlobals = require('jshint-globals');
