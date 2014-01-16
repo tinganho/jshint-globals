@@ -111,4 +111,5 @@ var browser = require('jshint-globals').browser;
 var _requirejs = require('jshint-globals').requirejs;
 var mocha = require('jshint-globals').mocha
 ```
+[Please check the source for all globals defined in each category](https://github.com/tinganho/jshint-globals/blob/master/index.js)
 
