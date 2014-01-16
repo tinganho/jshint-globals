@@ -1,0 +1,23 @@
+{
+  "name": "jshint-globals",
+  "version": "0.0.0",
+  "description": "Use predefined grunt-contrib-jshint globals",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tinganho/jshint-globals.git"
+  },
+  "keywords": [
+    "jshint",
+    "globals"
+  ],
+  "author": "Tingan Ho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tinganho/jshint-globals/issues"
+  },
+  "homepage": "https://github.com/tinganho/jshint-globals"
+}
